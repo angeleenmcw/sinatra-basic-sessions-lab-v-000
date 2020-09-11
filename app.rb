@@ -7,6 +7,7 @@ class App < Sinatra::Base
   end
   
   get '/checkout' do
-    session["item"] = 
+    session["item"] = "DVR"
+    @session = session
   end
 end
